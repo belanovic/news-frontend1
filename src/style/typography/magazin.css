@@ -1,0 +1,18 @@
+.magazin {
+    
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fthumbs%2FmagazinBckg.jpg?alt=media&token=ac1aac99-eff2-4aa9-ba19-1458b2f2708b');
+    background-size: cover;
+    border-radius: 35px;
+    box-shadow: 0px 0px 50px 0px rgb(93, 93, 93);
+}
+.magazin.onTop {
+    background-image: none;
+    box-shadow: none;
+}
+
+.magazin-latest-title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.5em
+}
+

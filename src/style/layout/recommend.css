@@ -1,0 +1,20 @@
+
+.recommend .swiper-slide.swiper-slide-visible {
+
+    margin-bottom: 10em;
+    margin-top: 10em;
+    box-shadow: 0 0 30px 10px rgb(34, 34, 34);
+} 
+
+.recommend-mobile .swiper-slide.swiper-slide-visible {
+
+
+} 
+
+
+
+@media all and (max-width: 1024px) {
+ /*    .recommend {
+        flex-direction: column;
+    } */
+}

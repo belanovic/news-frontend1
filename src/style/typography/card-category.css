@@ -1,0 +1,79 @@
+.card-category-title  {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.5s;
+}
+
+.card-category-title:hover {
+    text-decoration: none;
+    color: rgb(61, 170, 237);
+}
+
+/* 
+.card-category-container-supertitle {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(84, 84, 84, 0) 100%);
+} */
+
+.card-category.first .card-category-supertitle {
+    font-size: 1.5rem;
+}
+
+.card-category-supertitle {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    /* background: linear-gradient(180deg, rgb(255, 49, 49), rgb(0, 0, 0)); */
+}
+
+.card-category-container-subtitle a {
+    pointer-events: none;        
+}
+
+
+.card-category-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.card-category-info {
+    font-size: 1rem;
+}
+.card-category-info .card-info-category {
+
+    text-transform: uppercase;
+    color: rgb(61, 170, 237);
+    letter-spacing: 1px;
+}
+
+.card-category-info .card-info-date {
+    text-transform: lowercase;
+}
+
+.card-category .read-more a {    
+    padding: 0.5em 2em 0.5em 2em;
+    /* background: linear-gradient(180deg, rgb(216, 6, 6), rgb(0, 0, 0)); */
+    color: white;
+    font-size: 1rem;
+    transition: background 0.25s;
+}
+.card-category .read-more a:hover {
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 0, 0);
+}
+
+@media all and (max-width: 1024px) {
+
+    .card-category.first .card-category-supertitle {
+        font-size: 1.25rem;
+    }
+    
+    .card-category-title {
+        font-size: 1.75rem;
+    }
+
+    .card-category-supertitle {
+
+        font-size: 0.75rem;
+       
+    }
+}

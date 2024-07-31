@@ -1,0 +1,71 @@
+.article .news-feed {
+}
+
+.article .news-feed-title {
+    font-size: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.article-category {
+    font-size: 1.5rem;
+}
+.article-category a {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.article-category a:hover {
+    color: rgb(32, 148, 249);
+}
+.article-title {
+   font-size: 3rem;
+   line-height: 1.25;
+}
+.article-subtitle {
+    font-size: 1.75rem;
+    font-weight: lighter;
+    line-height: 1.25;
+}
+.article-text p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.imgDescription, .videoDescription {
+    background: black;
+    color: white;
+    font-size: 1.25em;
+    padding: 0.4em 0.8em 0.5em 0.8em;
+}
+.article-metadata {
+    font-size: 1.25rem;
+}
+.source span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.author span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.date-published span, .date-updated span {
+    font-size: 1.5rem;
+
+}
+
+.article-video {
+    outline: none;
+}
+
+
+@media all and (max-width: 1024px) {
+    .article-subtitle {
+
+        font-weight: bold;
+    }
+
+    .date-published span, .date-updated span {
+        font-weight: bold;
+    }
+
+}

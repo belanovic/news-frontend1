@@ -1,0 +1,43 @@
+
+
+.magazin {
+    padding: 1.5em 4em 4em 4em;
+}
+.magazin-header {
+    margin-bottom: 3em;
+}
+.magazin.onTop .magazin-header {
+    display: none;
+}
+.magazin-up {
+    margin-bottom: 5em;
+}
+.magazin-down {
+    margin-bottom: 5em;
+}
+
+.magazin-down-mobile {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.magazin-latest-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media all and (max-width: 1024px) {
+    .magazin-down {
+        display: none;
+    }
+    .magazin-down-mobile {
+        display: block;
+    }
+
+
+    .magazin-latest-articles {
+        flex-direction: column;
+    }
+}

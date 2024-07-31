@@ -1,0 +1,29 @@
+.recommend-mobile {
+    display: none;
+}
+
+.recommend-label {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.recommend.onTop .recommend-label {
+    display: none;
+}
+
+.recommend .swiper, .recommend-mobile .swiper {
+
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fthumbs%2Fzid.png?alt=media&token=df74d93a-d576-4184-9e7e-159610ffd9e1');
+    
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media all and (max-width: 1024px) {
+    .recommend {
+        display: none;
+    }
+    .recommend-mobile {
+        display: block;
+    }
+}

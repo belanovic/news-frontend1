@@ -1,0 +1,250 @@
+/* card-magazinBig ********************* */
+
+.card-magazinBig {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-magazinBig-container-img {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 60%;
+}
+
+.card-magazinBig-container-img a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.card-magazinBig-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-magazinBig-text {
+    flex: 0 0 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-magazinBig-container-supertitle {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 80%;
+    z-index: 1;
+    padding: 0;
+}
+.card-magazinBig-supertitle {
+    display: inline-block;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+}
+
+.card-magazinBig-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card-magazinBig-info .card-info-category {
+    display: none;
+}
+
+.card-magazinBig .play {
+    margin: 0.2em;
+}
+
+.card-magazinBig .read-more {
+    order: 2;
+}
+.card-magazinBig .read-more a {
+    display: inline-block;
+}
+
+.card-magazinBig .read-more a {    
+    padding: 0.5em 2em 0.5em 2em;
+    background: rgb(161, 0, 0);
+    color: white;
+    font-size: 1rem;
+    transition: background 0.25s;
+}
+.card-magazinBig .read-more a:hover {
+    cursor: pointer;
+    color: white;
+    background: rgb(223, 0, 0);
+}
+
+/* card-magazin ********************* */
+
+.card-magazin-container-img {
+    position: relative;
+    overflow: hidden;
+}
+.card-magazin-container-img a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.card-magazin-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-magazin-text {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+}
+
+.card-magazin-title {
+    margin-bottom: 0.25em;
+    margin-top: 0em;
+}
+
+
+.card-magazin-container-supertitle {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+
+    z-index: 1;
+    padding: 0;
+}
+.card-magazin-supertitle {
+    display: inline-block;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+}
+
+.card-magazin-info {
+    margin-bottom: 1em;
+}
+
+.card-magazin-info .card-info-category {
+    display: none;
+}
+
+.card-magazin-info .card-info-date {
+    display: inline-block;
+}
+
+.card-magazin-info  .fa-arrow-right {
+    margin: 0 5px 0 7px;
+}
+
+
+/* card-magazinLatest ********************* */
+
+.card-magazinLatest {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card-magazinLatest:nth-child(1) {
+    margin-bottom: 4em;
+}
+
+
+.card-magazinLatest-img {
+    width: 100%;
+}
+
+.card-magazinLatest-container-title {
+    order: 1;
+}
+
+.card-magazinLatest-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-magazinLatest-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card-magazinLatest-container-subtitle {
+    display: none;
+}
+
+.card-magazinLatest .play {
+    margin: 0.2em;
+}
+
+
+/* magazin themas ********************* */
+
+.magazin-themas {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.magazin-themas .thema-item {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: all 0.25s;
+}
+.magazin-themas .thema-item a {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magazin-themas .thema-item a span {
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 2rem;
+    background: rgb(184, 0, 0);
+    color: white;
+}
+
+.magazin-themas .thema-item:hover {
+    transform: scale(1.1);
+}
+
+
+@media all and (max-width: 1024px) {
+    .card-magazinBig {
+        flex-direction: column;
+    }
+    .card-magazinBig-container-img {
+        margin-bottom: 1em;
+    }
+    .card-magazinBig-container-supertitle {
+        left: 0;
+    }
+
+
+    .card-magazinLatest {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .card-magazinLatest {
+        margin-bottom: 2em;
+    }
+
+   .magazin-themas {
+        flex-wrap: wrap;     
+        justify-content: space-evenly;   
+    }
+    .magazin-themas .thema-item { 
+        height: 70px;
+        width: 25%; 
+        margin-bottom: 2em;
+        margin-right: 1em;
+    }
+    .magazin-themas .thema-item a span {
+        font-size: 1.5rem;
+    }
+}

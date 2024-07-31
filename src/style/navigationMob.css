@@ -1,0 +1,49 @@
+/* ========== NavigationMob ============= */
+
+
+.navigationMob {
+    display: none;
+    position: absolute;
+    z-index: 1235;
+    transition: left 0.5s;
+}
+
+.navMob-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMob-item {
+    flex: 1 1 0;
+    padding: 0.5em 2em 0.5em 2em;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.navMob-item:first-child {
+    border-left: 1px solid black;
+}
+
+.navMob-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    transition: color 0.25s;
+}
+
+.navMob-label:hover {
+    cursor: pointer;
+    color: rgb(32, 148, 249);
+ }
+
+ .navMob-item.active .navMob-label {
+    color: rgb(32, 148, 249);
+ }
+
+
+@media all and (max-width: 1024px) {
+    .navigationMob {
+        display: block;
+    }
+}

@@ -1,0 +1,18 @@
+.latest-tabs {
+    font-size: 1.25rem;
+}
+
+.recent, .popular, .trending{
+    text-align: center;
+    box-shadow: 0px 5px 20px 0px rgb(120, 120, 120);
+    transition: background 0.5s;
+}
+
+.recent.active, .popular.active, .trending.active {
+    background: rgb(15, 141, 250);
+    color: white;
+}
+
+.recent:hover, .popular:hover, .trending:hover {
+    cursor: pointer;
+}

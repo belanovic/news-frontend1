@@ -1,0 +1,79 @@
+
+.header {
+    /* background: rgb(54, 54, 54);
+    background: rgb(112, 0, 0);
+    background: linear-gradient(180deg, rgb(151, 0, 0), rgb(0, 0, 0)); */
+    caret-color: transparent;
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-title {
+  background: rgba(143, 1, 1, 0);
+ 
+}
+
+.header-title a {
+    text-decoration: none;
+}
+
+.header-title a .title .title-text {
+    font-size: 6rem;    
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    color: rgb(143, 1, 1);
+    color: white;
+}
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+}
+
+.header-title a .title img {
+    font-size: 4rem;    
+    font-style: italic;
+    user-select: none;    
+}
+
+.fa-react {
+    color: white;
+    color: black;
+}
+
+.header-icons {
+  box-shadow: 0px 5px 15px 5px rgb(0, 0, 0);
+}
+ 
+
+.menu-toggle:hover {
+  cursor: pointer; 
+}
+.header .menu-toggle {
+  font-size: 3rem;
+}
+.header .fa-times.hide, .fa-bars.hide {
+  display: none;
+}
+.header .fa-times.show, .fa-bars.show {
+  display: inline;
+}
+  
+@media all and (max-width: 1024px) {
+ 
+  .header-title a .title .title-img{
+    font-size: 3rem;  
+  }
+  .header-title a .title .title-text{
+    font-size: 5rem;   
+  }
+  .header-icons {
+    box-shadow: none
+  }
+  
+}

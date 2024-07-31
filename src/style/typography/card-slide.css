@@ -1,0 +1,75 @@
+
+.card-slide-text {
+    color: white;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.card-slide-title {
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    transition: color 0.25s;
+}
+
+.card-slide-title:hover {
+    color: rgb(15, 141, 250);
+}
+
+.card-slide-container-supertitle {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(84, 84, 84, 0) 100%);
+}
+
+.card-slide-supertitle {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgb(255, 49, 49), rgb(0, 0, 0));
+}
+.card-slide-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.card-slide-info .card-info-category {
+    /* background-color: rgba(57, 57, 57, 0.1); */
+    font-size: 1.5rem;
+    font-family: sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-slide-info .card-info-date {
+    /* background-color: rgba(57, 57, 57, 0.1); */
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+@media all and (max-width: 1024px) {
+    .card-slide-title {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        letter-spacing: 1px;
+    }
+
+    .card-slide-supertitle {
+        font-size: 1.25rem;
+    }
+    .card-slide-subtitle {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+ 
+    .card-slide-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .card-slide-info .card-info-category {
+        font-size: 0.75rem;
+    }
+    
+    .card-slide-info .card-info-date {
+        font-size: 1rem;
+    }
+}

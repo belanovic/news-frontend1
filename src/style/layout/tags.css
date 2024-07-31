@@ -1,0 +1,12 @@
+.tags {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin-bottom: 0.52em;
+    margin-right: 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}

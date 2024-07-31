@@ -1,0 +1,74 @@
+@keyframes ticker {
+    from {transform: translateX(0%)}
+    to {transform: translateX(-100%)}
+}
+.ticker-wrapper {
+    display: flex;
+    z-index: 2;
+
+}
+
+.ticker-wrapper.positioned {
+    position: sticky;
+    top: 0;
+}
+
+.ticker-label {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsTicker1 {
+    flex: 0 0 60%;
+    overflow: hidden;
+    padding-left: 50%;
+}
+.newsTicker1Container {
+
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    animation-name: ticker;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.newsTicker1Container:hover {
+    animation-play-state: paused;
+}
+
+.tickerTitle {
+    margin-right: 2em;
+    padding: 7px 0 7px 0;
+}
+
+/* ticker day */
+
+.ticker-day {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+}
+.weather .city {
+    margin-right: 1em;
+}
+.weather-data {
+    display: flex;
+
+}
+
+
+.weather-data .icon {
+    width: 3em;
+}
+
+

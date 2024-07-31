@@ -1,0 +1,29 @@
+.covidTitle {
+    padding: 0.4em 0.5em 0.4em 0.5em;
+    background: linear-gradient(90deg, rgb(251, 29, 0), rgb(253, 106, 48));
+    color: white;
+}
+.covidTitle span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.covidNavigation {
+    font-size: 1.2rem;
+    padding: 0.3em 0.5em 0.3em 0.3em;
+}
+.covidNavigationItem {
+    margin-right: 1em;
+    caret-color: transparent;
+}
+.covidData {
+    background: rgb(212, 212, 212);
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0.5em 0.2em 0.5em 0.2em;
+}
+
+.covidDataNumber {
+    font-weight: bold;
+    font-size: 1rem;
+}

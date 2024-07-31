@@ -1,0 +1,13 @@
+
+
+.central {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 1024px) {
+    .central {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,71 @@
+@keyframes ticker {
+    from {transform: translateX(0%)}
+    to {transform: translateX(-100%)}
+}
+.ticker-wrapper {
+    display: flex;
+    z-index: 2;
+
+}
+
+.ticker-wrapper.positioned {
+    position: sticky;
+    top: 0;
+}
+
+.ticker-label {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticker {
+    flex: 1 1 60%;
+    overflow: hidden;
+    padding-left: 50%;
+}
+.ticker-container{
+    display: flex;
+    white-space: nowrap;
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+}
+.tickerTitle {
+    margin-right: 2em;
+    padding: 7px 0 7px 0;
+}
+
+/* ticker day */
+
+.ticker-day {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weather {
+    display: flex;
+    align-items: center;
+}
+.weather .city {
+    margin-right: 1em;
+}
+.weather-data {
+    display: flex;
+}
+.weather-data .icon {
+    width: 3em;
+}
+
+@media all and (max-width: 1024px) {
+    .ticker-label {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+    .ticker-day {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.covid {
+    margin: 0 0.2em 1em 0.2em;
+}
+
+.covidTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.covidNavigation {
+    display: flex;
+    justify-content: center;
+}
+.covidNavigationItem:hover {
+    cursor: pointer;
+}
+.covidSerbia, .covidWorld {
+    display: flex;
+    justify-content: space-around;
+}
+.covidData {
+    flex: 0 0 49%;
+
+}
+.covidDataName {
+    margin-bottom: 0.5em;
+}
+
+.covidDataNumberPlus {
+    color: red;
+}

@@ -1,0 +1,76 @@
+.carousel {
+    flex: 0 0 62%;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+/* fix swiper ////////////////// */
+
+.carousel .swiper-container {
+    width: 100% !important;
+}
+.carousel li.swiper-slide {
+    width: 100% !important;
+}
+
+.carousel .swiper-slide {
+    list-style: none;
+}
+
+.carousel #main.swiper-container {
+    margin-bottom: 1em;
+}
+
+.carousel .swiper-wrapper {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.carousel .swiper-slide {
+    padding: 0px;
+    margin: 0;
+}
+
+.carousel #thumbs .swiper-wrapper {
+    margin-bottom: 1em;
+}
+
+.carousel .swiper-pagination {
+    bottom: 0 !important;
+    height: 20px !important;
+}
+
+.carousel .swiper-pagination-bullet {
+    width: 1em !important;
+    height: 1em !important;
+    margin: 7px 10px 0 10px !important;
+}
+
+
+/* thumbs //////////////////////////////////// */
+
+
+.carousel .imgThumb {
+    width: 100%;
+}
+.carousel .imgThumb:hover {
+    cursor: pointer;
+}
+
+.carousel #thumbs .swiper-slide {
+    transition: all 0.25s;
+    transform: scale(0.7, 0.7);
+}
+.carousel #thumbs .swiper-slide-thumb-active {
+    transform: scale(1, 1);
+}
+/* .swiper-pagination {
+    position: absolute;
+    bottom: -100%;
+} */
+
+@media all and (max-width: 1024px) {
+    .carousel {
+        margin-bottom: 2em;
+    }
+}

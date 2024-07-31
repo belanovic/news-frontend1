@@ -1,0 +1,85 @@
+.card-category {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 0 30px 0 rgb(118, 118, 118); 
+    padding: 2em 1em 1em 2em;
+    margin-bottom: 3em;
+}
+
+.card-category.first {
+    flex-direction: column;
+    padding: 3em;
+    box-shadow: 0 0 30px 0 rgb(118, 118, 118);
+}
+
+.card-category-container-img {
+    position: relative;
+    flex: 0 0 35%;
+    overflow: hidden;
+}
+
+.card-category.first .card-category-container-img {
+    margin-bottom: 1em;
+}
+
+.card-category-img {
+    width: 100%;
+}
+
+.card-category-text {
+    flex: 0 0 63%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-category-container-title {
+    order: 1;
+}
+
+.card-category.first .card-category-container-supertitle {
+    margin-left: 20px;
+    top: 50px;
+}
+
+.card-category-container-supertitle {
+    position: absolute;
+    margin-left: 10px;
+    width: 100%;
+    top: 35px;
+    z-index: 1;
+    padding: 0;
+}
+
+.card-category-supertitle {
+    display: inline-block;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+}
+.card-category-container-subtitle {
+    order: 2;
+}
+
+.card-category-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card-category .play {
+    margin: 0.2em;
+}
+
+.card-category .read-more {
+    order: 2;
+    margin-top: auto;
+}
+.card-category .read-more a {
+    display: inline-block;
+}
+
+@media all and (max-width: 1024px) {
+    
+    .card-category-container-subtitle {
+        display: none
+    }
+}

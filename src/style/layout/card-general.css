@@ -1,0 +1,72 @@
+
+.card-general {
+    flex: 0 0 24%;
+    position: relative;
+
+}
+
+.card-general-container-img {
+    position: relative;
+    overflow: hidden; 
+}
+.card-general-container-img a {
+
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+.card-general-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-general-text {  
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-general-title {
+    margin-bottom: 0.25em;
+    margin-top: 0em;
+}
+
+.card-general-container-supertitle {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    padding: 0em 0em 0em 0em;
+}
+.card-general-supertitle {
+    display: inline-block;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+}
+.card-general-info {
+    order: -1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card-general-info .card-info-category {
+    display: inline-block;
+}
+
+.card-general-info  .fa-arrow-right {
+    margin: 0 5px 0 7px;
+}
+
+@media all and (max-width: 1024px) {
+    .card-general {
+        margin-bottom: 2em;
+    }
+    .card-general-container-supertitle {
+        padding: 1em 1em 1em 1em;
+    }
+
+}

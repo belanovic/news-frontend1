@@ -1,0 +1,24 @@
+.category .news-feed-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.articles-tag {
+    font-size: 2rem;
+    color: rgb(15, 141, 250);
+}
+
+.category-themas .thema-item a {
+    font-size: 1.5rem;
+    color: rgb(15, 141, 250);
+    transition: all 0.25s;
+}
+.category-themas .thema-item a:hover {
+    transform: scale(1.2);
+}
+
+@media all and (max-width: 1024px) {
+    .category-themas .thema-item a {
+        font-size: 1rem;
+    }
+}

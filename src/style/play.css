@@ -1,0 +1,51 @@
+.play {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    background: linear-gradient(180deg, rgb(255, 49, 49), rgb(45, 45, 45));
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px grey;
+    z-index: 2;
+}
+
+.fa-play-circle {
+    color: white;
+}
+
+.card-slide .fa-play-circle {
+    font-size: 4.5em;
+}
+.card-category.first .fa-play-circle {
+    font-size: 4em;
+}
+.card-category .fa-play-circle {
+    font-size: 2em;
+}
+.card-latest .fa-play-circle {
+    font-size: 1.3em;
+}
+.card-general .fa-play-circle {
+    font-size: 2.5em;
+}
+.card-generalSmall .fa-play-circle {
+    font-size: 1.5em;
+}
+.card-sportBlock .fa-play-circle {
+    font-size: 2.5em;
+}
+.card-sportCarousel .fa-play-circle {
+    font-size: 2.5em;
+}
+.card-sportBig .fa-play-circle {
+    font-size: 4.5em;
+}
+.card-magazin .fa-play-circle {
+    font-size: 2.5em;
+}
+.card-magazinBig .fa-play-circle {
+    font-size: 4.5em;
+}
+.card-recommend .fa-play-circle {
+    font-size: 3.5em;
+}
