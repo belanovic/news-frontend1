@@ -1,10 +1,8 @@
+let link;
 
+if(process.env.REACT_APP_COPY == '0') link = `https://linux-news-backend.onrender.com`;
+if(process.env.REACT_APP_COPY == '1') link = `https://news-backend1-jazp.onrender.com`;
 
-const LINK = process.env.NODE_ENV ==  `https://linux-news-backend.onrender.com`;
-
-console.log(process.env.REACT_APP_COPY + 'ovo je environment variable')
-
-const HOST_BACKEND = process.env.NODE_ENV == 'production'? `https://linux-news-backend.onrender.com` : 'http://localhost:4000'
-
+const HOST_BACKEND = process.env.NODE_ENV == 'production'? link : 'http://localhost:4000'
 
 export default HOST_BACKEND;
