@@ -5,6 +5,7 @@ import {useParams} from 'react-router-dom';
 import {getArticle} from './getNews';
 import dateFormat from './dateFormat.js';
 import Latest from './Latest.js';
+import Advertising from './Advertising.js';
 import Line from './Line.js';
 import Tags from './Tags.js';
 import Parser from 'html-react-parser';
@@ -130,6 +131,7 @@ export default function Article() {
             
             <div className='article-sidebar'>
                     <Latest />
+                    <Advertising type = 'sidebar' num = {3} />
             </div>
             
             {article.category === 'politics' && <div className='news-feed'>

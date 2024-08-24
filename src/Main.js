@@ -19,6 +19,7 @@ import {getFrontpageNews} from './getNews.js';
 import dateFormat from './dateFormat.js';
 import {context} from './newsContext.js';
 import Covid from './Covid.js';
+import Advertising from './Advertising.js';
 import Line from './Line.js';
 import Space from './Space.js';
 import Form from './Form.js';
@@ -37,9 +38,11 @@ export default function Main() {
 
         if((section == 'central') && settings) return <section className='central'>
             <Carousel/>
+            
             <Latest />
         </section>
         if(section == 'velike vesti') return <General/>
+        
         if(section == 'male vesti') return <GeneralSmall />
         if((section == 'preporučujemo') || (section == 'preporucujemo')) return <Recommend onTop = {i == 0} />
         if((section == 'mreže') || (section == 'mreze')) return <Social />
@@ -67,6 +70,7 @@ export default function Main() {
     return (
         <main className="main">
             <div className="container main-container">
+            <Advertising type = 'main' num = {3} />
                 {settings? 
                     settings.templates.type == 'default'? defaultSectionsMain.map(generateMain) : settings.templates.sectionsMain.map(generateMain)
                     : 
