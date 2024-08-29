@@ -29,7 +29,19 @@ export default function Article() {
         if (category === 'sports') return 'Sport'
     }
 
-
+    function numOfAds(articleOpened) {
+        if(!articleOpened) return
+        if(articleOpened.imgURL == 'generic') {
+            if(articleOpened.text.length < 1000) return 1;
+            if((articleOpened.text.length > 1000) && (articleOpened.text.length < 1500)) return 2;
+            if(articleOpened.text.length > 1000) return 3;
+        }
+        if(articleOpened.imgURL != 'generic') {
+            if(articleOpened.text.length < 1000) return 2;
+            if((articleOpened.text.length > 1000) && (articleOpened.text.length < 1500)) return 3;
+            if(articleOpened.text.length > 1000) return 4;
+        }
+    }
 
     useEffect(() => {
         if (filter) {
@@ -69,6 +81,7 @@ export default function Article() {
     useEffect(() => {
         return () => setActiveCategory('')
     }, [])
+
 
     return (
         <article className="container article">
@@ -131,7 +144,7 @@ export default function Article() {
             
             <div className='article-sidebar'>
                     <Latest />
-                    <Advertising type = 'sidebar' num = {3} />
+                    <Advertising type = 'sidebar' num = {numOfAds(article)} />
             </div>
             
             {article.category === 'politics' && <div className='news-feed'>

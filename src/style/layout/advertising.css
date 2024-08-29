@@ -5,11 +5,24 @@
 .advertising.main {
     
 }
-.ads {
+.advertising.sidebar .ads {
     width: 60%;
 }
 .advertising.main .ads {
     display: flex;
+}
+.advertising .ad {
+    transition: all 0.25s;
+}
+.advertising .ad:hover {
+    transform: scale(1.05);
+}
+.advertising.main .ad {
+    width: 100%;
+    margin-right: 2em;
+}
+.advertising.main .ad:last-child {
+    margin-right: 0em;
 }
 .advertising.sidebar .ad {
     width: 100%;
@@ -17,4 +30,13 @@
 }
 .ad img {
     width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+    .advertising.sidebar .ads {
+        width: 100%;
+    }
+    .advertising.sidebar .ad {
+        padding: 0em 5em 0.5em 5em;
+    }
 }

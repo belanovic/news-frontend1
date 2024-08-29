@@ -61,6 +61,17 @@ export default function Main() {
         if(section == 'custom8') return <Custom customX ={settings.customs[8]} />
         if(section == 'custom9') return <Custom customX ={settings.customs[9]} />
 
+        if(section == 'ads1') return <Advertising type = 'main' num = {1} />
+        if(section == 'ads2') return <Advertising type = 'main' num = {2} />
+        if(section == 'ads3') return <Advertising type = 'main' num = {3} />
+        if(section == 'ads4') return <Advertising type = 'main' num = {4} />
+        if(section == 'ads5') return <Advertising type = 'main' num = {5} />
+        if(section == 'ads6') return <Advertising type = 'main' num = {6} />
+        if(section == 'ads7') return <Advertising type = 'main' num = {7} />
+        if(section == 'ads8') return <Advertising type = 'main' num = {8} />
+        if(section == 'ads9') return <Advertising type = 'main' num = {9} />
+        if(section == 'ads10') return <Advertising type = 'main' num = {10} />
+
     }
 
     useEffect(() => {
@@ -70,7 +81,7 @@ export default function Main() {
     return (
         <main className="main">
             <div className="container main-container">
-            <Advertising type = 'main' num = {3} />
+
                 {settings? 
                     settings.templates.type == 'default'? defaultSectionsMain.map(generateMain) : settings.templates.sectionsMain.map(generateMain)
                     : 
