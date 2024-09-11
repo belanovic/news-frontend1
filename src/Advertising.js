@@ -1,3 +1,7 @@
+import React, {useState, useEffect, useContext} from 'react';
+import {context} from './newsContext.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Thumbs, Autoplay, EffectCube, EffectFade, EffectCoverflow} from 'swiper/modules';
 import './style/layout/advertising.css'
 import './style/typography/advertising.css'
 
@@ -24,9 +28,7 @@ export default function Advertising({type, num}) {
             images[j] = temp;
         }
     }
-    shuffleImages(images);
-
-    return (
+    /* return (
          <div className={`advertising ${type}`}>
             <div className = 'ads'>
             {images && images.map((elem, i) => {
@@ -35,5 +37,48 @@ export default function Advertising({type, num}) {
             </div>
         </div>
 
+    ) */
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+    return (<>
+        {type == 'sidebar'? 
+        <div className={`advertising ${type}`}>
+            <div className = 'ads'>
+            {images && images.map((elem, i) => {
+                if(i < num) return elem
+                })}
+            </div>
+        </div>
+        :
+        <div className={`advertising ${type}`}>
+              <Swiper
+                    modules={[Navigation, Autoplay, EffectCube, EffectFade, EffectCoverflow]}
+                    id="main"
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+                    slidesPerView={num}
+                    speed={1500}
+                    /* pagination= {{clickable: true}} */
+                    loop={true}
+                    tag='section'
+                    /* navigation */
+                    /* grabCursor={true} */
+                    wrapperTag='div' 
+                    thumbs={{ swiper: thumbsSwiper }}
+                >
+                    {images.map((article, i) => {
+                        
+                        return <div className = 'ads'>
+                                    <SwiperSlide tag='li' key = {i}>
+                                        {article}
+                                    </SwiperSlide>
+                                </div>
+                    })}
+  
+            </Swiper>
+        </div>}
+        </>
     )
 }

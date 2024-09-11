@@ -66,12 +66,6 @@ export default function Main() {
         if(section == 'ads3') return <Advertising type = 'main' num = {3} />
         if(section == 'ads4') return <Advertising type = 'main' num = {4} />
         if(section == 'ads5') return <Advertising type = 'main' num = {5} />
-        if(section == 'ads6') return <Advertising type = 'main' num = {6} />
-        if(section == 'ads7') return <Advertising type = 'main' num = {7} />
-        if(section == 'ads8') return <Advertising type = 'main' num = {8} />
-        if(section == 'ads9') return <Advertising type = 'main' num = {9} />
-        if(section == 'ads10') return <Advertising type = 'main' num = {10} />
-
     }
 
     useEffect(() => {
