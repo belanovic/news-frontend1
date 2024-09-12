@@ -24,10 +24,14 @@ export default function BootstrapCarousel() {
             modules={[Navigation, Pagination, Autoplay,EffectCube, EffectFade, EffectCoverflow]}
             id="main"
             effect= {settings.carousel}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
+            autoplay={settings.autoplay? 
+              {
+                delay: 2000,
+                disableOnInteraction: false,
+              }
+              :
+              false
+            }
             slidesPerView={'auto'}
             speed={1500}
             pagination= {{clickable: true}}
