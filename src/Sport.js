@@ -61,7 +61,6 @@ export default function Sport({onTop}) {
             <Swiper
                     modules={[Navigation,Autoplay, EffectCube, EffectFade, EffectCoverflow]}
                     id="main"
-          
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
@@ -79,7 +78,7 @@ export default function Sport({onTop}) {
                     tag='section'
                     /* navigation */
                     grabCursor={true}
-                    wrapperTag='ul' 
+                    wrapperTag='div' 
                     thumbs={{ swiper: thumbsSwiper }}
                 >
                     {frontpageNews.map((article, i) => {

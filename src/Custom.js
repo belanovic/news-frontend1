@@ -65,7 +65,7 @@ export default function Custom({customX}) {
         let typeCoefficient;
 
         if(type == 'title') {typeCoefficient = 7}
-        if(type == 'supertitle') {typeCoefficient = 5}
+        if(type == 'supertitle') {typeCoefficient = 4}
         if(type == 'subtitle') {typeCoefficient = 5}
         if(type == 'category') {typeCoefficient = 4}
         if(type == 'date') {typeCoefficient = 4}
@@ -109,7 +109,16 @@ export default function Custom({customX}) {
     }
 
     return ( custom && 
-        <div className= 'custom'>
+        <div 
+            className= 'custom'
+            style={{
+                borderTop: `${custom.border.borderTop.px}px ${custom.border.borderTop.stil} ${custom.border.borderTop.color}`,
+                borderBottom: `${custom.border.borderBottom.px}px ${custom.border.borderBottom.stil} ${custom.border.borderBottom.color}`,
+                borderLeft: `${custom.border.borderLeft.px}px ${custom.border.borderLeft.stil} ${custom.border.borderLeft.color}`,
+                borderRight: `${custom.border.borderRight.px}px ${custom.border.borderRight.stil} ${custom.border.borderRight.color}`,
+                borderRadius: `${custom.border.borderRadius.topLeft}% ${custom.border.borderRadius.topRight}% ${custom.border.borderRadius.bottomLeft}% ${custom.border.borderRadius.bottomRight}%`
+            }}
+        >
             <div 
                 className='custom-title'
                 style={{

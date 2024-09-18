@@ -12,7 +12,7 @@
 
     .custom-articles {
         flex-direction: column;
-    }
+    } 
 
     .card-custom.first {
         flex-direction: column;
@@ -37,6 +37,7 @@
 
     .card-custom-container-supertitle {
         padding: 1em 1em 1em 1em;
+        font-size: 1.25rem;
     }
 
     .card-custom-supertitle {
