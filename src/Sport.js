@@ -83,7 +83,7 @@ export default function Sport({onTop}) {
                 >
                     {frontpageNews.map((article, i) => {
     
-                        if((i < (range.sport.start)) || (i > range.sport.end - 1)) return
+                        if((i < (range.sport.start)) || (i > range.sport.end - 5)) return
                         return <SwiperSlide tag='li' key = {i}>
                                 <Card  
                                     key = {i}

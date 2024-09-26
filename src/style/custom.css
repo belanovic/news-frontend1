@@ -38,6 +38,7 @@
     .card-custom-container-supertitle {
         padding: 1em 1em 1em 1em;
         font-size: 1.25rem;
+        display: none;
     }
 
     .card-custom-supertitle {
