@@ -10,9 +10,12 @@
     box-shadow: none;
 }
 
+
 .magazin-latest-title {
     color: white;
     font-size: 2rem;
     margin-bottom: 1.5em
 }
-
+.magazin.onTop .magazin-latest-title {
+    color: black
+}

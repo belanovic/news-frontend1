@@ -77,7 +77,7 @@ export default function Main() {
             <div className="container main-container">
 
                 {settings? 
-                    settings.templates.type == 'default'? defaultSectionsMain.map(generateMain) : settings.templates.sectionsMain.map(generateMain)
+                    settings.templates.sectionsMain.map(generateMain)
                     : 
                     defaultSectionsMain.map(generateMain)
                 }

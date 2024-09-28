@@ -124,6 +124,11 @@
     color: white;
 }
 
+.magazin.onTop .card-magazinLatest-title  {
+
+    color: black;
+}
+
 .card-magazinLatest-title:hover {
     text-decoration: none;
     color: rgb(61, 170, 237);
@@ -133,6 +138,10 @@
     font-size: 1.25rem;
     color: white;
     font-style: italic;
+}
+.magazin.onTop .card-magazinLatest-info  {
+
+    color: black;
 }
 .card-magazinLatest-info .card-info-category {
 
