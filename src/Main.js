@@ -60,6 +60,11 @@ export default function Main() {
         if(section == 'custom7') return <Custom customX ={settings.customs[7]} />
         if(section == 'custom8') return <Custom customX ={settings.customs[8]} />
         if(section == 'custom9') return <Custom customX ={settings.customs[9]} />
+        if(section == 'custom10') return <Custom customX ={settings.customs[10]} />
+        if(section == 'custom11') return <Custom customX ={settings.customs[11]} />
+        if(section == 'custom12') return <Custom customX ={settings.customs[12]} />
+        if(section == 'custom13') return <Custom customX ={settings.customs[13]} />
+        if(section == 'custom14') return <Custom customX ={settings.customs[14]} />
 
         if(section == 'ads1') return <Advertising type = 'main' num = {1} />
         if(section == 'ads2') return <Advertising type = 'main' num = {2} />

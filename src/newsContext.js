@@ -73,6 +73,8 @@ function Provider(props) {
 
     /* useEffect(() => {console.log(settings)}, [settings]) */
 
+
+
     return (
         <context.Provider value={
             {   settings,

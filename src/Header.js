@@ -15,10 +15,23 @@ export default function Header({positioned}) {
     const handleClickMenu = () => {
         setNavVisible(prev => !prev);
     }
+
+    const [scrollTop, setScrollTop] = useState(true);
+
+    useEffect(() => {
+        
+        window.addEventListener("scroll", function(){
+            if(window.scrollY==0){
+                setScrollTop(true)
+            } else {
+                setScrollTop(false)
+            }
+          });
+    }, [])
  
     return (
         <header 
-            className={`header ${positioned? 'positioned' : ''}`}
+            className={`header ${positioned? 'positioned' : ''} ${scrollTop? 'scrollTop' : ''}`}
             style={{background: backgroundHeader}}
         >
                
@@ -45,6 +58,7 @@ export default function Header({positioned}) {
                             <img className='one-tech express-image' src='https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fekspres.jpg?alt=media&token=33fd85e8-2b7d-48a7-943c-d9c143ff0a21'></img>
                             <img className='one-tech node-image' src='https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fthumbs%2Fnode1.png?alt=media&token=54b0f739-56b7-4580-afef-ecd2e90ee223'></img>
                             <img className='one-tech mongodb-image' src='https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fmongo.jpg?alt=media&token=e99860c4-db68-41fa-9f24-ff2f05aa009d'></img>
+                            <img className='one-tech firebox-image' src='https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fthumbs%2Ffbs.jpg?alt=media&token=b993b1b5-1a53-4aed-9b7d-e5d790acdb3a'></img>
                             <img className='one-tech linux-image' src='https://firebasestorage.googleapis.com/v0/b/site-news-storage.appspot.com/o/site-news-images%2Fthumbs%2Flinux3.jpg?alt=media&token=d9faaf5b-70b9-4a25-aba9-22968d119f59'></img>
                             
                         </div>

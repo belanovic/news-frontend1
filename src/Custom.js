@@ -152,6 +152,7 @@ export default function Custom({customX}) {
                         flex: calculateFlexProperty(),
                         position: 'relative',
                         display: custom.body.count == 1? 'flex' : 'block',
+                        background: custom.article.background.isActive? custom.article.background.color : 'none',
                         marginBottom: /* (i == custom.body.firstArticlePosition - 1) && custom.body.count > 5?  */'3em'
                     }}
                 >
@@ -219,7 +220,7 @@ export default function Custom({customX}) {
                         className={`card-custom-text`}
                         style={{
                             width: '100%',
-                            padding: custom.body.count == 1?'1em 1em 1em 2em' : '1em 1em 1em 0em',
+                            padding: custom.body.count == 1? '1em 1em 1em 2em' : (custom.article.background.isActive? `1.5em 1.5em 1.5em 1.5em` : `1em 1em 1em 0em` )  ,
                             display: 'flex',
                             flexDirection: 'column',
                             justifyContent: 'center'
