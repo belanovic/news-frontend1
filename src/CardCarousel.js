@@ -9,6 +9,14 @@ import './style/typography/carousel.css';
 import './style/layout/card-slide.css';
 import './style/typography/card-slide.css';
 
+const formatCathegory = (category) => {
+    if (category === 'politics') return 'Politika'
+    if (category === 'business') return 'Ekonomija'
+    if (category === 'technology') return 'Tehnologija'
+    if (category === 'entertainment') return 'Magazin'
+    if (category === 'sports') return 'Sport'
+}
+
 export default function CardCarousel({ title, supertitle, subtitle, datePublished, dateUpdated,
                                        date, src, filter, path, videoURL, category}) {
 
@@ -55,7 +63,7 @@ export default function CardCarousel({ title, supertitle, subtitle, datePublishe
                 </div>
                 <div className={`card-slide-text`}>
                     <div className={`card-slide-info`}>
-                        <div className='card-info-category'>{category} / </div>
+                        <div className='card-info-category'>{formatCathegory(category)} / </div>
                         <div className={`card-info-date`}>
                             <span className="date datePublished" >
                                 {datePublished}
